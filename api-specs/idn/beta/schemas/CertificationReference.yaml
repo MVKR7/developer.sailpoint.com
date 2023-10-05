@@ -1,0 +1,15 @@
+description: The previous certification
+type: object
+allOf:
+- $ref: '../../v3/schemas/BaseReferenceDto.yaml'
+- type: object
+  properties:
+    reviewer:
+      $ref: './Reviewer.yaml'
+      description: Certification reviewer
+properties:
+  type:
+    description: The type of object that the reviewer is.
+    enum:
+    - "CERTIFICATION"
+    example: CERTIFICATION
